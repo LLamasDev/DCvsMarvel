@@ -18,5 +18,5 @@ def Auth():
 
 def inicioTwitter(texto):
     oauth = Auth()
-    api = tweepy.API(oauth) 
-    api.update_status(texto) 
+    api = tweepy.API(oauth)
+    api.update_status(texto)

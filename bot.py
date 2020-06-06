@@ -49,7 +49,7 @@ while True:
         if ganador == 0:
             textoES = superheroDC + " ha derrotado a " + superheroMarvel + "."
             textoEN = translator.translate(textoES, src='es', dest='en')
-            texto = "🇪🇸 " + textoES + "\n🇬🇧 " + textoEN.text
+            texto = "🇪🇸 " + textoES + "\n🇬🇧 " + textoEN.text + "\nDC: " + str(tamanoDC) + " - Marvel: " + str(tamanoMarvel-1)
             inicioTelegram(texto)
             inicioTwitter(texto)
 
@@ -57,7 +57,7 @@ while True:
         elif ganador == 1:
             textoES = superheroMarvel + " ha derrotado a " + superheroDC + "."
             textoEN = translator.translate(textoES, src='es', dest='en')
-            texto = "🇪🇸 " + textoES + "\n🇬🇧 " + textoEN.text
+            texto = "🇪🇸 " + textoES + "\n🇬🇧 " + textoEN.text + "\nDC: " + str(tamanoDC-1) + " - Marvel: " + str(tamanoMarvel)
             inicioTelegram(texto)
             inicioTwitter(texto)
 
